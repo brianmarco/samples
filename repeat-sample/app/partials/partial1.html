@@ -1,0 +1,19 @@
+<div>
+    <h3>Single Book</h3>
+    <ul>
+        <li>{{singleBook.id}}
+            <ul>
+                <li ng-repeat="(key, value) in singleBook.content">{{key}}</li>
+            </ul>
+        </li>
+    </ul>
+    <hr/>
+    <h3>Multiple Books</h3>
+    <ul>
+        <li ng-repeat="book in books">{{book.id}}
+            <ul>
+                <li ng-repeat="(key, value) in book.content">{{key}}</li>
+            </ul>
+        </li>
+    </ul>
+</div>
