@@ -1,0 +1,9 @@
+<h1>View 2</h1>
+<input ng-model="searchFilter" type="text"/>
+<div ng-controller="MyCtrl2 as myCtrl2">
+    <ul>
+        <li ng-repeat="c in myCtrl2.categories track by $index | filter:searchFilter">
+            {{c}}
+        </li>
+    </ul>
+</div>
